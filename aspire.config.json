@@ -1,5 +1,6 @@
 {
   "appHost": {
-    "path": "HostedAgentDeploy.AppHost/HostedAgentDeploy.AppHost.csproj"
+    "path": "HostedAgentDeploy.AppHost/HostedAgentDeploy.AppHost.csproj",
+    "language": "csharp"
   }
 }

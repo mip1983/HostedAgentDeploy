@@ -1,6 +1,8 @@
 <Solution>
+  <Project Path="HostedAgentDeploy.Agent/HostedAgentDeploy.Agent.csproj" />
   <Project Path="HostedAgentDeploy.ApiService/HostedAgentDeploy.ApiService.csproj" />
   <Project Path="HostedAgentDeploy.AppHost/HostedAgentDeploy.AppHost.csproj" />
+  <Project Path="HostedAgentDeploy.SecondApiService/HostedAgentDeploy.SecondApiService.csproj" />
   <Project Path="HostedAgentDeploy.ServiceDefaults/HostedAgentDeploy.ServiceDefaults.csproj" />
   <Project Path="HostedAgentDeploy.Web/HostedAgentDeploy.Web.csproj" />
 </Solution>

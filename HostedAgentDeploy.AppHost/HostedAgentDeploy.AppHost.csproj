@@ -1,16 +1,25 @@
 <Project Sdk="Aspire.AppHost.Sdk/13.6.0">
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net10.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <UserSecretsId>2ea89459-1a77-4f62-afd5-5bb37e97edfc</UserSecretsId>
-  </PropertyGroup>
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net10.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<UserSecretsId>2ea89459-1a77-4f62-afd5-5bb37e97edfc</UserSecretsId>
+		<AspireUseCliBundle>true</AspireUseCliBundle>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\HostedAgentDeploy.ApiService\HostedAgentDeploy.ApiService.csproj" />
-    <ProjectReference Include="..\HostedAgentDeploy.Web\HostedAgentDeploy.Web.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="Aspire.Hosting.Azure" Version="13.6.0" />
+	  <PackageReference Include="Aspire.Hosting.Azure.AppContainers" Version="13.6.0" />
+	  <PackageReference Include="Aspire.Hosting.Foundry" Version="13.6.0-preview.1.26479.8" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\HostedAgentDeploy.Agent\HostedAgentDeploy.Agent.csproj" />
+		<ProjectReference Include="..\HostedAgentDeploy.ApiService\HostedAgentDeploy.ApiService.csproj" />
+		<ProjectReference Include="..\HostedAgentDeploy.SecondApiService\HostedAgentDeploy.SecondApiService.csproj" />
+		<ProjectReference Include="..\HostedAgentDeploy.Web\HostedAgentDeploy.Web.csproj" />
+	</ItemGroup>
 
 </Project>
